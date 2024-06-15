@@ -31,8 +31,9 @@ export default class AppContent extends React.Component {
         this.setState({ componentToShow: 'welcome' });
       });
   };
-  
 
+
+  
   onRegister = (e, firstName, lastName, username, password) => {
     e.preventDefault();
     request('POST', '/register', {
