@@ -6,4 +6,5 @@ export default function Buttons(props){
             <button onClick={props.logout}>Logout</button>
         </div>
     )
+    
 }
