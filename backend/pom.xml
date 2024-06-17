@@ -25,7 +25,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -47,46 +50,35 @@
 		<artifactId>lombok</artifactId>
 		<scope>provided</scope>
 	</dependency>
-
-		<dependencies>
-    <!-- MapStruct API -->
-    <dependency>
-        <groupId>org.mapstruct</groupId>
-        <artifactId>mapstruct</artifactId>
-        <version>1.5.2.Final</version>
-    </dependency>
-
-    <!-- MapStruct Processor -->
-    <dependency>
-        <groupId>org.mapstruct</groupId>
-        <artifactId>mapstruct-processor</artifactId>
-        <version>1.5.2.Final</version>
-        <scope>provided</scope>
-    </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
 	<dependency>
-	 <groupId>com.auth0</groupId>
-	 <artifactId>java-jwt</artifactId>
-	 <version>4.3.0</version>
+		<groupId>org.mapstruct</groupId>
+		<artifactId>mapstruct</artifactId>
+		<version>1.5.5.Final</version>
 	</dependency>
 
+	<!-- https://mvnrepository.com/artifact/com.auth0/auth0 -->
+	<dependency>
+		<groupId>com.auth0</groupId>
+		<artifactId>java-jwt</artifactId>
+		<version>4.3.0</version>
+	</dependency>
+	<dependency>
+    <groupId>jakarta.validation</groupId>
+    <artifactId>jakarta.validation-api</artifactId>
+    <version>3.0.2</version>
+</dependency>
 </dependencies>
 
-<build>
-    <plugins>
-        <plugin>
+
+
+	<build>
+		<plugins>
+		<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
         </plugin>
-    </plugins>
-</build>
-
-
-	</dependencies>
-
-	<build>
-		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
